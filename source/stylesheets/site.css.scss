@@ -48,6 +48,11 @@ a {
 .projects {
   border-radius: 2px;
   opacity: 1;
+  width: 14em;
+  height: 15em;
+  padding: 10px;
+  display: inline-flex;
+
 }
 
 .projects:hover {
@@ -92,8 +97,4 @@ a {
   color: white;
 }
 
-.about-info {
-  background-color: white;
-  border-radius: 5px;
-  color: #2a5456;
-}
+
