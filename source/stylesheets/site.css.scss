@@ -19,9 +19,8 @@ a {
   }
 }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+.job-title {
+ padding: 15px 0;
 }
 
 .responsive {
@@ -48,8 +47,8 @@ a {
 .projects {
   border-radius: 2px;
   opacity: 1;
-  width: 15em;
-  height: 15em;
+  width: 250px;
+  height: 250px;
   padding: 10px;
   display: inline-flex;
 
@@ -60,9 +59,15 @@ a {
 }
 
 .content {
-  background-color: #59dde4;
-  width: 57%;
-  margin: auto;
+   background-color: #F7D1CD;
+    width: 70%;
+    margin: auto;
+    padding: 15px 15px;
+    font-size: 17px;
+    -webkit-box-shadow: 1px 1px 1px #717d80;
+    box-shadow: 1px 1px 1px #dcdcd6;
+    border-radius: 3px;
+    color: #1b4244;
 }
 
 .zoom {
@@ -98,3 +103,8 @@ a {
 }
 
 
+.headline {
+     letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: 800;
+}
