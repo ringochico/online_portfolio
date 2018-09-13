@@ -1,75 +1,87 @@
 body{
   background: white;
   font-family: 'intro';
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 50px 0;
+
 
 }
  h1 {
     font-family: 'Muli', sans-serif;
-    font-size: 52px;
+    font-size: 60px;
     padding: 18px 0;
 }
-.container {
-      padding-top: 80px;
 
+.wrapper {
+  padding: 20px 0;
 }
-.row {
-  justify-content: space-around;
-}
-.post{
-  width: 250px;
-    height: 250px;
-    position: relative;
-    cursor: pointer;
-}
-.post:hover .post-s{
-  width: 200px;
-}
-.post img {
-  display: block;
-  width: 200px;
-  height: 200px;
-}
-.post-s{
-  width: 0px;
-  height: 200px;
-  background: #007bff;
-  position: absolute;
-  top: 0;
+
+.icons {
+ font-size: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: 0.7s ease;
-
-}
-.post-s a {
-  text-decoration: none;
-  color: white;
-  font-family: 'Muli', sans-serif;
-
-
+  justify-content: space-evenly;
+  padding: 10px 0;
 }
 
-.post-s:hover a{
-  color: #23c4cc;
-  opacity: .8;
+// .img{
+//   width: 39%;
+//     height: auto;
+//     padding: 10px;
 
-}
-.post-s h2{
-  color: white;
-  font-size: 50px;
-  border: 6px solid white;
-  padding: 10px 30px;
-}
-
-
+// }
 .projects {
-  display: flex;
+      display: flex;
+    justify-content: space-evenly;
+    padding: 5px 10px;
 }
 
 
+
+
+.arrow {
+  font-size: 20px;
+}
+
+#outer-box {
+  width: 300px;
+  height: 194px;
+  display: block;
+  position: relative;
+}
+/* line 9, ../sass/style.scss */
+#outer-box img {
+  width: 300px;
+  height: auto;
+}
+/* line 14, ../sass/style.scss */
+#outer-box #inner-box {
+  background: #157FFB;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  transition: opacity .5s;
+}
+/* line 25, ../sass/style.scss */
+#outer-box #inner-box p {
+  color: #fff;
+  line-height: 150px;
+  font-family: 'arial';
+  text-align: center;
+}
+/* line 34, ../sass/style.scss */
+#outer-box:hover #inner-box {
+  opacity: .9;
+  transition: opacity .5s;
+}
+
+.left {
+  float: left;
+    margin-bottom: 3%;
+}
 // body {
 //   background-color: white;
 
@@ -195,11 +207,7 @@ body{
 //     width: 100%;
 //     height: auto;
 // }
-.icons {
-  font-size: 5vh;
-  display: flex;
-  justify-content: space-evenly;
-}
+
 // .blue-wrapper {
 //   background-color: #5ADDE4;
 //   color: red;
