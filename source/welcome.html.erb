@@ -1,20 +1,80 @@
 ---
-title: Welcome to my page!
+title: Larry - Web Developer
 ---
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Hover</title>
   </head>
   <body>
-    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('images/background.jpg');">
-      <div class="banner-content">
-        <h1>Larry Nevins</h1>
-        <h2>Web Developer</h2>
-        <%= link_to "View Profile", "/welcome.html",
-           :class=>"btn btn-primary btn-lg" %>
-        <a class="btn btn-primary btn-lg">View CV</a>
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <%= link_to "LinkedIn", "https://www.linkedin.com/in/larrynevins/"  %>
+        <%= link_to "About", "/about.html"  %>
+        <%= link_to "Crew", "/crew.html"  %>
+        <%= link_to "Contact", "/contact.html"  %>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <div class="container">
+        <div class="center">
+          <h1>Cat </h1>
+          <%= link_to "About", "/welcome.html"  %>
+          <h1 class="text-center">My projects</h1>
+          <p class="text-center arrow"><i class=" fas fa-arrow-circle-down"></i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col .col-sm-12">
+          <div class="projects">
+            <a href="http://www.ollie.host/">
+              <div id="outer-box" >
+                <img src="images/ollieboard.png">
+                <div id="inner-box">
+                  <p>Ollieboard</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://interpreteme.herokuapp.com/">
+              <div id="outer-box">
+                <img src="images/spurience.png">
+                <div id="inner-box">
+                  <p>Spurience</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="projects">
+            <a href="https://cocktail-craze.herokuapp.com/cocktails">
+              <div id="outer-box">
+                <img src="images/cocktail.png">
+                <div id="inner-box">
+                  <p>Mister Cocktail</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://priceless-mirzakhani-d8304e.netlify.com/">
+              <div id="outer-box">
+                <img src="images/jackson.png">
+                <div id="inner-box">
+                  <p>Jackson</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+  <div class="container">
+    <div class="icons">
+      <a href="mailto:ichbinlarry@email.com"><i class="fas fa-envelope-open"></i></a>
+      <a href="https://www.linkedin.com/in/larrynevins"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/ringochico"><i class="fab fa-github-square"></i></a>
+    </div>
+  </div>
+</body>
 </html>
