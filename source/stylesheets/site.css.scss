@@ -71,3 +71,13 @@ body {
   margin-bottom: 30px;
 }
 
+
+// Button
+.btn{
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
